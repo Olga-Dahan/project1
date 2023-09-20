@@ -28,8 +28,6 @@ function saveTasks(tasks) {
 
 function getTasks() {
     const tasks = localStorage.getItem("tasks");
-    console.log(typeof (tasks));
-    console.log(tasks);
     if (tasks) {
       return JSON.parse(tasks);
     }
