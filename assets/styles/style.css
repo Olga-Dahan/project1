@@ -5,16 +5,16 @@ h1 {
 
 @font-face {
     font-family: "Navilla";
-    src: url("fonts/Navilla.ttf")
+    src: url("../fonts/Navilla.ttf")
 }
 
 body {
-    background-image: url("images/tile.jpg");
+    background-image: url("../images/tile.jpg");
     background-color: brown;
 }
 
 #myForm {
-    background-image: url("images/formbg.jpg");
+    background-image: url("../images/formbg.jpg");
     width: 60%;
     text-align: center;
     margin: auto;
@@ -40,7 +40,7 @@ label {
 }
 
 #note {
-    background-image: url("images/notebg.png");
+    background-image: url("../images/notebg.png");
     height: 250px;
     width: 200px;
     padding: 10px;
@@ -97,4 +97,9 @@ label {
 
 .bi {
     font-size: 25px;
+}
+
+#notice {
+    color: red;
+    font-size: large;
 }

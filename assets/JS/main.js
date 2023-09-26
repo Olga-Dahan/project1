@@ -6,9 +6,10 @@ function submitForm(event) {
 
     if (validateDate(theContent, theDate, theTime)) {
         addTask(theContent, theDate, theTime);
+        document.getElementById("myForm").reset();
+        document.getElementById("notice").innerHTML = "";
     }
 
-    document.getElementById("myForm").reset();
 }
 
 
@@ -62,26 +63,25 @@ function buildTasks(flag) {
 function validateDate(theContent, theDate, theTime) {
 
     if (theContent === "") {
-        alert("Missing task");
+        document.getElementById("notice").innerHTML = "Missing task!";
         return 0;
     }
 
     if (theTime === "") {
-        alert("Missing time");
+        document.getElementById("notice").innerHTML = "Missing time!";
         return 0;
     }
 
     if (theDate === "") {
-        alert("Missing date");
+        document.getElementById("notice").innerHTML = "Missing date!";
         return 0;
     }
 
     var selectedDate = new Date(theDate);
     const currentDate = new Date();
-
-
+   
     if (selectedDate <= currentDate) {
-        alert("Please select a future date");
+        document.getElementById("notice").innerHTML = "Please select a future date!";
         return 0;
     }
 

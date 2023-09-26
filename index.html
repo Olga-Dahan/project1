@@ -18,15 +18,14 @@
 
     <form method="POST" id="myForm">
         <label for="content">Enter your task:</label>
-        <input type="text" id="content" required>
+        <input type="text" id="content">
         <br>
-
-        <input type="date" id="date" required>
+        <input type="date" id="date">
         <br>
-
-        <input type="time" id="time" required>
+        <input type="time" id="time">
         <br>
-
+        <br>
+        <div id = "notice" ></div>
         <button onclick="submitForm(event)">Add Task</button>
         <button onclick="clearTask(event)">Clear Task</button>
     </form>
